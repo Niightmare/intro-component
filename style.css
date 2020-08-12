@@ -96,13 +96,37 @@ input {
   /* border: 3px solid chartreuse; */
 }
 
+.fa {
+  display: none;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  margin: 0.8em 0 0 -3.5em;
+  /* border: 1px solid green; */
+}
+
+.fa-exclamation-circle {
+  background-image: url("images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .message {
+  display: none;
   color: var(--Red);
   text-align: end;
   margin-bottom: 0;
   /* padding: 5px 15px; */
   font-size: 11px;
   font-style: italic;
+}
+
+.message-error {
+  display: block;
+}
+
+.fa-error {
+  display: initial;
 }
 
 .btn-submit {
@@ -112,7 +136,6 @@ input {
   border-radius: 5px;
   padding: 20px;
   border-style: none;
-  outline: none;
   cursor: pointer;
   color: white;
   background-color: var(--Green);
@@ -137,20 +160,6 @@ footer {
   background-color: rgba(185, 182, 211, 0.4);
 
   border: 1px solid blue;
-}
-
-.fa {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  margin: 0.8em 0 0 -3.5em;
-  border: 1px solid green;
-}
-
-.fa-exclamation-circle {
-  background-image: url("images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .attribution a {
