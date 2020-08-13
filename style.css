@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   padding: 30px;
-  /* border: 1px solid lawngreen; */
+  border: 1px solid lawngreen;
 }
 
 .introduction {
@@ -41,7 +41,7 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 30px 0 55px 0;
-  /* border: 2px dotted violet; */
+  border: 2px dotted violet;
 }
 
 .introduction h1,
@@ -54,7 +54,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  /* border: 2px dotted orange; */
+  border: 2px dotted orange;
 }
 
 .banner {
@@ -67,7 +67,7 @@ body {
   margin-bottom: 20px;
   background-color: var(--Blue);
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .form {
@@ -80,7 +80,7 @@ body {
   color: black;
   padding: 40px;
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  /* border: 1px dotted orange; */
+  border: 1px dotted orange;
 }
 
 .input-form {
@@ -95,7 +95,7 @@ input {
   flex: 2;
   font-weight: 600;
   padding: 1.5em 2em;
-  /* min-width: 400px; */
+  min-width: initial;
   border-radius: 5px;
   border: 1px solid hsl(246, 25%, 77%);
   /* border: 1px solid chartreuse; */
@@ -178,7 +178,7 @@ footer {
   color: #ffce36;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .container {
     flex-direction: initial;
     padding: 60px;
@@ -203,18 +203,18 @@ footer {
   }
 
   input {
-    min-width: 400px;
+    min-width: 300px;
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (min-width: 1150px) {
   input {
     min-width: 350px;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1250px) {
   input {
-    min-width: 300px;
+    min-width: 400px;
   }
 }
