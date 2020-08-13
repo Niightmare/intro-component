@@ -30,7 +30,7 @@ body {
   flex-direction: column;
   flex: 1 0 auto;
   padding: 30px;
-  border: 1px solid lawngreen;
+  /* border: 1px solid lawngreen; */
 }
 
 .introduction {
@@ -41,20 +41,20 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 30px 0 55px 0;
-  border: 2px dotted violet;
+  /* border: 2px dotted violet; */
 }
-
+/* 
 .introduction h1,
 .introduction p {
-  /* border: 1px solid cyan; */
-}
+  border: 1px solid cyan;
+} */
 
 .registration {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  border: 2px dotted orange;
+  /* border: 2px dotted orange; */
 }
 
 .banner {
@@ -67,7 +67,7 @@ body {
   margin-bottom: 20px;
   background-color: var(--Blue);
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .form {
@@ -80,7 +80,7 @@ body {
   color: black;
   padding: 40px;
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  border: 1px dotted orange;
+  /* border: 1px dotted orange; */
 }
 
 .input-form {
