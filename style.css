@@ -180,10 +180,10 @@ footer {
 }
 
 @media screen and (min-width: 300px) {
-  .container{
+  .container {
     padding: 0 0 30px 0;
   }
-  
+
   .introduction p {
     text-align: justify;
     padding: 0px 15px;
@@ -198,7 +198,6 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
-  
   body {
     background-image: url("images/bg-intro-desktop.png");
   }
