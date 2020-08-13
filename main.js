@@ -29,3 +29,10 @@ function validate() {
   var inputs = document.getElementById("register-form").elements;
   validateForm(inputs);
 }
+
+let submitBtn = document.getElementById('btn-submit');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  validate();
+})
