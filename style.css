@@ -43,11 +43,12 @@ body {
   padding: 30px 0 55px 0;
   /* border: 2px dotted violet; */
 }
-/* 
-.introduction h1,
-.introduction p {
-  border: 1px solid cyan;
-} */
+
+.introduction h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 30px;
+}
 
 .registration {
   display: flex;
@@ -179,6 +180,11 @@ footer {
 }
 
 @media screen and (min-width: 1025px) {
+  
+  body {
+    background-image: url("images/bg-intro-desktop.png");
+  }
+
   .container {
     flex-direction: initial;
     padding: 60px;
