@@ -16,9 +16,8 @@ body {
   font-size: 16px;
   color: white;
   font-family: "Poppins", sans-serif;
-  /* background-color: var(--Red); */
-  background-color: var(--Dark-Blue);
-  /* background-image: url("images/bg-intro-desktop.png"); */
+  background-color: var(--Red);
+  background-image: url("images/bg-intro-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -28,9 +27,10 @@ body {
 
 .container {
   display: inherit;
+  flex-direction: column;
   flex: 1 0 auto;
-  padding: 60px;
-  border: 1px solid lawngreen;
+  padding: 30px;
+  /* border: 1px solid lawngreen; */
 }
 
 .introduction {
@@ -39,14 +39,14 @@ body {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: justify;
-  padding: 55px;
-  border: 2px dotted violet;
+  text-align: center;
+  padding: 30px 0 55px 0;
+  /* border: 2px dotted violet; */
 }
 
 .introduction h1,
 .introduction p {
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
 }
 
 .registration {
@@ -54,54 +54,60 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  padding: 40px;
-  border: 1px solid orange;
+  /* border: 2px dotted orange; */
 }
 
 .banner {
   display: inherit;
-  align-items: center;
+  justify-content: center;
+  text-align: center;
   border-radius: 15px;
-  padding: 5px 100px;
-  margin-top: 5em;
+  padding: 0 50px;
+  margin-top: 0;
   margin-bottom: 20px;
   background-color: var(--Blue);
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 15px;
   background-color: white;
   border-radius: 15px;
   color: black;
   padding: 40px;
   box-shadow: 0px 10px 0px 0px rgba(22, 20, 20, 0.2);
-  border: 2px dotted fuchsia;
+  /* border: 1px dotted orange; */
 }
 
 .input-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 20px;
+  /* border: 1px dotted fuchsia; */
 }
 
 input {
+  flex: 2;
   font-weight: 600;
   padding: 1.5em 2em;
-  min-width: 400px;
+  /* min-width: 400px; */
   border-radius: 5px;
   border: 1px solid hsl(246, 25%, 77%);
-  /* border: 3px solid chartreuse; */
+  /* border: 1px solid chartreuse; */
 }
 
 .fa {
   display: none;
-  position: absolute;
+  align-self: flex-end;
+  position: relative;
   height: 30px;
   width: 30px;
-  margin: 0.8em 0 0 -3.5em;
+  margin: -2.7em 10px 0 0;
   /* border: 1px solid green; */
 }
 
@@ -115,10 +121,11 @@ input {
   display: none;
   color: var(--Red);
   text-align: end;
-  margin-bottom: 0;
-  /* padding: 5px 15px; */
+  padding-top: 5px;
+  margin-bottom: -5px;
   font-size: 11px;
   font-style: italic;
+  /* border: 1px solid green; */
 }
 
 .message-error {
@@ -143,6 +150,7 @@ input {
 }
 
 .terms {
+  text-align: center;
   font-size: 11px;
   margin-top: 20px;
   color: var(--Grayish-Blue);
@@ -158,8 +166,7 @@ footer {
   flex-shrink: 0;
   padding: 5px;
   background-color: rgba(185, 182, 211, 0.4);
-
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .attribution a {
@@ -169,4 +176,45 @@ footer {
 
 .attribution a:hover {
   color: #ffce36;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: initial;
+    padding: 60px;
+  }
+
+  .introduction {
+    text-align: justify;
+    padding: 55px;
+  }
+
+  .registration {
+    padding: 40px;
+  }
+
+  .banner {
+    padding: 5px 100px;
+    margin-top: 5em;
+  }
+
+  .form {
+    align-items: center;
+  }
+
+  input {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  input {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  input {
+    min-width: 300px;
+  }
 }
